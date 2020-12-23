@@ -1,5 +1,5 @@
 import unittest
-from mycd_Python.mycd import getOutputString
+from mycd import getOutputString
 
 
 class TestSum(unittest.TestCase):
