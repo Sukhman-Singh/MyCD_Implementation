@@ -1,0 +1,16 @@
+How to run mycd Python version:
+
+- Change directories in console to the directory that contains mycd.py.
+- Use the command "python mycd.py input1 input2" to run it. 
+- input1 is the current directory input and input 2 is the new directory input.
+
+
+How to run mycd Java version:
+
+- Change directories in console to the directory that contains mycd.java (in "src" directory).
+- Use the command "javac mycd.java" to compile it.
+- Use the command "java mycd input1 input2" to run it.
+- input1 is the current directory input and input 2 is the new directory input.
+
+
+Both versions have automated tests in their own test files.

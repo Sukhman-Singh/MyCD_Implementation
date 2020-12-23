@@ -1,0 +1,110 @@
+Provided Tests:
+
+# mycd  /   abc
+/abc
+
+
+# mycd /abc/def    ghi
+/abc/def/ghi
+
+
+# mycd /abc/def   ..
+/abc
+
+
+# mycd /abc/def   /abc
+/abc
+
+
+# mycd /abc/def   /abc/klm
+/abc/klm
+
+
+# mycd /abc/def    ../..
+/
+
+
+# mycd /abc/def    ../../..
+/
+
+
+# mycd /abc/def  .
+/abc/def
+
+
+# mycd /abc/def   ..klm
+..klm: No such file or directory
+
+
+# mycd /abc/def    //////
+/
+
+
+# mycd /abc/def   ......
+......: No such file or directory
+
+
+# mycd /abc/def    ../gh///../klm/.
+/abc/klm
+
+
+Extra Tests:
+
+# mycd /&&&    def
+&&&: No such file or directory (current directory input)
+
+
+# mycd /abc/&&&    def/ghi
+&&&: No such file or directory (current directory input)
+
+
+# mycd /abc/&&&/ghi    ../def
+&&&: No such file or directory (current directory input)
+
+
+# mycd /abc    %
+%: No such file or directory
+
+
+# mycd /abc    %$&
+%$&: No such file or directory
+
+
+# mycd /abc    def/%$&
+%$&: No such file or directory
+
+
+# mycd /abc/def    def/%$&/ghi
+%$&: No such file or directory
+
+
+# mycd /abc/def/ghi    def/%$&/../ghi
+%$&: No such file or directory
+
+
+Non-Automated Tests:
+
+# mycd %$
+Please provide exactly two inputs: the current directory path and the new directory.
+
+
+# mycd /abc
+Please provide exactly two inputs: the current directory path and the new directory.
+
+
+# mycd /abc    def    ghi
+Please provide exactly two inputs: the current directory path and the new directory.
+
+
+# mycd /abc    ..    ghi
+Please provide exactly two inputs: the current directory path and the new directory.
+
+
+
+
+
+
+
+
+
+
